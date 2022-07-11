@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* Reset properties */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+main,
+h1, h2, h3,
+p {
+    margin: 0;
+}
+
+  
+/* Custom Properties */
+  :root {
+    
+    font-size: 10px;
+    --fs-0: 2.8rem;
+    --fs-1: 2.4rem;
+    --fs-p: 1.4rem;
+    --fs-p1: 1.5rem;
+
+    --ff: 'Overpass', sans-serif;
+    --fw-m: 400;
+    --fw-b: 700;
+
+    
+    --clr-vd-blue: #131518;
+    --clr-dark-blue: #262E38;
+    --clr-white: #fff;
+    --clr-orange: #FC7614;
+    --clr-medium-gray: #7C8798;
+    --clr-light-gray: #969FAD;
+
+
+  
+    --spacer: 1rem;
+    --spacer-md: calc(var(--spacer) * 2);
+    --spacer-lg: calc(var(--spacer) * 3);
+    
+    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --br: 5px;
+    
+  }
+
+
+/* General styles */
+
+/* General styles */
+html {
+    background-color: var(--clr-vd-blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    cursor: default;
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+}
+.btn  {
+
+}
+
+/* General typography */
+
+
+/* Background images */
+
+
+/* Containers */
+
+
+/* Header */
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
