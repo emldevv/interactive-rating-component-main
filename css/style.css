@@ -102,11 +102,11 @@ p {
 /* Header */
 
 /* Rating Card */
-.rating-card__star-img {
+/* .rating-card__star-img {
     background: url(/images/icon-star.svg);
     width: 100%;
     height: 100%;
-}
+} */
 
 .attribution {
     font-size: 11px;

@@ -15,49 +15,50 @@
 
 <body>
   <main class="main">
-    <div class="rating-card">
-      <div class="rating-card__container container">
-        <div class="rating-card__star-img"></div>
-        <h1 class="rating-card__heading heading">How did we do?</h1>
-        <p class="rating-card__body body">
-          Please let us know how we did with your support request. All feedback is appreciated
-          to help us improve our offering!
-        </p>
-        <div class="rating_card-number number-1">1</div>
-        <div class="rating_card-number number-2">2</div>
-        <div class="rating_card-number number-3">3</div>
-        <div class="rating_card-number number-4">4</div>
-        <div class="rating_card-number number-5">5</div>
-        <button class="rating-card__submit-btn btn" href="#">Submit</button>
-      </div>
-    </div>
-    <!-- Rating state end -->
-
-
-    <!-- Thank you state start -->
-    <!-- <div class="thankyou-card">
-      <div class="thankyou-card__container container">
-        <div class="thankyou-card__receipt-img"></div>
-        <div class="thankyou-card__rating-confirm">
-          You selected -->
-    <!-- Add rating here out of 5
+    <div class="panels">
+      <div class="rating-card" role="card" aria-selected="true">
+        <div class="rating-card__container container">
+          <img class="rating-card__star-img" src="/images/icon-star.svg" alt="">
+          <h1 class="rating-card__heading heading">How did we do?</h1>
+          <p class="rating-card__body body">
+            Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!
+          </p>
+          <div class="rating_card-number number-1">1</div>
+          <div class="rating_card-number number-2">2</div>
+          <div class="rating_card-number number-3">3</div>
+          <div class="rating_card-number number-4">4</div>
+          <div class="rating_card-number number-5">5</div>
+          <button class="rating-card__submit-btn btn" href="#">Submit</button>
         </div>
-        <h1 class="thankyou-card__heading heading">Thank you!</h1>
-        <p class="thankyou-card__body body">
-          We appreciate you taking the time to give a rating. If you ever need more support,
-          don’t hesitate to get in touch!
-        </p>
+      </div>
+      <!-- Rating state end -->
+      <!-- CHECK WES BOSS COURSE for hiding the thank you state. You will find a solution in the "Tabs" exercise video, time 3m -->
+      <!-- Thank you state start -->
+      <div class="thankyou-card" role="card" aria-selected="false">
+        <div class="thankyou-card__container container">
+          <div class="thankyou-card__receipt-img"></div>
+          <div class="thankyou-card__rating-confirm">
+            You selected
+            <!-- Add rating here --> out of 5
+          </div>
+          <h1 class="thankyou-card__heading heading">Thank you!</h1>
+          <p class="thankyou-card__body body">
+            We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!
+          </p>
+        </div>
       </div>
     </div>
-  </main> -->
+  </main>
+  <!-- Thank you state end -->
 
-    <!-- Thank you state end -->
 
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Matt Lennon</a>.
-    </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Matt Lennon</a>.
+  </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>
