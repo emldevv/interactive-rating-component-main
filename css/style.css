@@ -157,6 +157,17 @@ p {
     background-color: var(--clr-dark-blue);
 }
 
+.star-rating-panel input:checked+label,
+.star-rating-panel input:focus+label {
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+}
+
+.star-rating-panel label:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-light-gray);
+}
+
 .star-rating-panel {
     display: flex;
     justify-content: space-between;
@@ -176,6 +187,16 @@ p {
     background-color: var(--clr-orange);
     border-radius: 2.5rem;
     border: none;
+}
+
+.rating-card__submit-btn:hover {
+    transform: scale(1.02);
+}
+
+.rating-card__submit-btn:focus {
+    transform: scale(1.02);
+    color: var(--clr-orange);
+    background-color: var(--clr-white);
 }
 
 .thankyou-card__container {
