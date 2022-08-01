@@ -37,7 +37,15 @@ p {
     --clr-orange: #FC7614;
     --clr-medium-gray: #7C8798;
     --clr-light-gray: #969FAD;
+    --clr-bg-black: #121417;
 
+    --white: #ffffff;
+    --primary-color: #7c8798;
+    --secundary-color: #fb7413;
+    --select-state: #959eac;
+    --bg-card: #252d37;
+    --bg-color: #121417;
+    --bg-secondary: #7c87981a;
 
 
     --spacer: 1rem;
@@ -51,7 +59,7 @@ p {
 
 /* General styles */
 html {
-    background-color: var(--clr-vd-blue);
+    background-color: var(--clr-bg-black);
     width: 100%;
     height: 100%;
     display: flex;
@@ -93,11 +101,13 @@ p {
 .thankyou-card {
     max-width: 32.7rem;
     max-height: 36rem;
-    background-color: var(--clr-dark-blue);
+    background-color: var(--bg-card);
+    background: radial-gradient(circle at 50% 0%,
+            #232A34 0%,
+            #181E27 100%);
     border-radius: 1rem;
+    padding: 2.4rem 2.4rem;
 }
-
-.container {}
 
 /* Header */
 
@@ -108,9 +118,157 @@ p {
     height: 100%;
 } */
 
+/* Rating card */
+.star {
+    display: flex;
+    align-items: left;
+    background-size: 42px 42px;
+    background-color: var(--clr-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-medium-gray);
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+}
+
+.rating-card__body {
+    margin-bottom: 2.4rem;
+}
+
+.rating-card__heading {
+    margin: 1.6rem 0 1rem 0;
+}
+
+/* .rating_card-numbers {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 2.4rem
+} */
+
+.star-rating-panel input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.star-rating-panel label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--ff);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-b);
+    color: var(--clr-medium-gray);
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    background-color: var(--clr-dark-blue);
+}
+
+.star-rating-panel {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 2.4rem
+}
+
+/* .star-rating-panel_number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--ff);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-b);
+    color: var(--clr-medium-gray);
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    background-color: var(--clr-dark-blue);
+} */
+
+/* .rating_card-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--ff);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-b);
+    color: var(--clr-medium-gray);
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    background-color: var(--clr-dark-blue);
+} */
+
+.rating-card__submit-btn {
+    height: 4.5rem;
+    width: 100%;
+    font-family: var(--ff);
+    font-weight: var(--fw-m);
+    font-size: var(--fs-p1);
+    text-transform: uppercase;
+    letter-spacing: 1.87px;
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+    border-radius: 2.5rem;
+    border: none;
+}
+
+.thankyou-card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thankyou-card__receipt-img {
+    margin-top: 1rem;
+    margin-bottom: 2.4rem;
+    height: 96px;
+    width: 144px;
+}
+
+.thankyou-card__rating-confirm {
+    font-family: var(--ff);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-m);
+    line-height: 22px;
+    color: var(--clr-orange);
+    font-style: normal;
+    padding: 0.6rem 1.5rem 0rem 1.5rem;
+    background-color: var(--clr-dark-blue);
+    border-radius: 2.5rem;
+}
+
+.thankyou-card__heading {
+    line-height: 3.4rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+p.thankyou-card__body {
+    text-align: center;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+}
+
+.attribution {
+    color: white;
 }
 
 .attribution a {

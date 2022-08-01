@@ -15,37 +15,57 @@
 
 <body>
   <main class="main">
-    <div class="panels">
+    <div class="cards">
       <div class="rating-card" role="card" aria-selected="true">
         <div class="rating-card__container container">
-          <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
-              fill="#FC7614" />
-          </svg>
+          <div class="star">
+            <img src="./images/icon-star.svg" alt="">
+          </div>
           <h1 class="rating-card__heading heading">How did we do?</h1>
           <p class="rating-card__body body">
             Please let us know how we did with your support request. All feedback is appreciated
             to help us improve our offering!
           </p>
-          <div class="rating_card-number number-1">1</div>
-          <div class="rating_card-number number-2">2</div>
-          <div class="rating_card-number number-3">3</div>
-          <div class="rating_card-number number-4">4</div>
-          <div class="rating_card-number number-5">5</div>
+          <fieldset class="star-rating-panel">
+            <input type="radio" name="rating" value="1" id="rating1" class="star-rating-panel_btn" />
+            <label for="rating1">
+              <span class="star-rating-panel_number">1</span>
+            </label>
+            <input type="radio" name="rating" value="2" id="rating2" class="star-rating-panel_btn" />
+            <label for="rating2">
+              <span class="star-rating-panel_number">2</span>
+            </label>
+            <input type="radio" name="rating" value="3" id="rating3" class="star-rating-panel_btn" />
+            <label for="rating3">
+              <span class="star-rating-panel_number">3</span>
+            </label>
+            <input type="radio" name="rating" value="4" id="rating4" class="star-rating-panel_btn" />
+            <label for="rating4">
+              <span class="star-rating-panel_number">4</span>
+            </label>
+            <input type="radio" name="rating" value="5" id="rating5" class="star-rating-panel_btn" />
+            <label for="rating5">
+              <span class="star-rating-panel_number">5</span>
+            </label>
+          </fieldset>
+          <!-- <ul class="rating_card-numbers">
+            <li class="rating_card-number number-1">1</li>
+            <li class="rating_card-number number-2">2</li>
+            <li class="rating_card-number number-3">3</li>
+            <li class="rating_card-number number-4">4</li>
+            <li class="rating_card-number number-5">5</li>
+          </ul> -->
           <button class="rating-card__submit-btn btn" href="#">Submit</button>
         </div>
       </div>
       <!-- Rating state end -->
-      <!-- CHECK WES BOSS COURSE for hiding the thank you state. You will find a solution in the "Tabs" exercise video, time 3m -->
       <!-- Thank you state start -->
-      <div class="thankyou-card" role="card" aria-selected="false">
+      <div class="thankyou-card" role="card" aria-selected="false" hidden>
         <div class="thankyou-card__container container">
-          <div class="thankyou-card__receipt-img"></div>
-          <div class="thankyou-card__rating-confirm">
-            You selected
-            <!-- Add rating here --> out of 5
-          </div>
+          <img class="thankyou-card__receipt-img" src="./images/illustration-thank-you.svg" alt="">
+          <em class="thankyou-card__rating-confirm">
+            You selected <span id="stars-selected"></span> out of 5
+          </em>
           <h1 class="thankyou-card__heading heading">Thank you!</h1>
           <p class="thankyou-card__body body">
             We appreciate you taking the time to give a rating. If you ever need more support,
