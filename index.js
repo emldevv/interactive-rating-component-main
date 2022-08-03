@@ -2,26 +2,31 @@ const rating = document.querySelector('.star-rating-panel');
 const ratingButtons = rating.querySelectorAll('.star-rating-panel__btn');
 const submitButton = document.querySelector('.rating-card__submit-btn');
 const cards = document.querySelector('.cards');
-const ratingCards = cards.querySelector('[role="card"]')
+const ratingCards = cards.querySelector('[role="card"]');
 
 
 function ratingNumberClick(event) {
     console.log(event.currentTarget); // Identifies each radio button
+    // Return radio button value
 }
 
-submitButton.addEventListener('click', function () {
+submitButton.addEventListener('click', function (event) {
+    console.log(event.currentTarget);
     // Submit button steps
     // hide both cards
     
-
     // mark both cards as unselected
 
 
     // mark the submit button as selected
 
 
-    // Find the tankyou card and show it
+    // Find the thankyou card and show it
+
+    // Add an alert if no rating selected
+    
 })
+
 
 ratingButtons.forEach(button => button.addEventListener('click', ratingNumberClick));
 
